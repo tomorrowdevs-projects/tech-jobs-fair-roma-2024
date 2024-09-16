@@ -1,0 +1,52 @@
+.imgProfile {
+  height: 70px;
+  width: 70px;
+}
+
+.noCaret::after {
+  display: none !important;
+}
+
+.navBar {
+  background-color: #5251b5 !important;
+}
+
+.navText {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -3%;
+  color: #fffdfd;
+  text-align: center;
+}
+
+.narrowDropdown {
+  min-width: 120px !important;
+  width: auto !important;
+}
+
+.userToggle {
+  padding: 0.5rem !important;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .narrowDropdown {
+    min-width: 100px !important;
+  }
+  
+  .imgProfile {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .navText {
+    font-size: 0.8rem;
+  }
+}
