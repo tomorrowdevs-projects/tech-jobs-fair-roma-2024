@@ -1,72 +1,89 @@
-# Tech Jobs Fair Hackathon Roma 2024
+### Traccia del progetto
 
-L'obiettivo finale dell'attività è lavorare su di un progetto ripercorrendo le stesse modalità di lavoro in azienda.
+[Tech Jobs Fair Roma 2024](https://github.com/tomorrowdevs-projects/tech-jobs-fair-roma-2024-team4/tree/main)
 
-Lo strumento per raggiungere tale obiettivo sarà la realizzazione di un MVP di un progetto.
+# HABIT TRACKER 👣
 
-Lo sviluppo si completerà **Venerdi 20 Settembre**, quando tutti i team termineranno il loro lavoro.
+## Descrizione del Progetto
 
-## Calendario Attività:
+**HABIT TRACKER** è un'applicazione web progettata per aiutare gli utenti a tracciare e monitorare le loro abitudini quotidiane, settimanali o mensili. Gli utenti possono definire le loro abitudini personali, ricevere notifiche per ricordare di completarle e visualizzare grafici che mostrano il loro progresso nel tempo.
 
-### Venerdi 13 Settembre 2024
+[Get Started](#get-started)
 
-#### Ore 11.00: Meeting di ritrovo su [link zoom] e saluti
+## Funzionalità Principali
 
-#### Fase 1: brainstorming progetto
-In call con tutti i team, verranno raccolti i requisiti attraverso una sessione di domande e risposte.
-L'obiettivo di questa fase è trasmettere un metodo di approccio ai progetti.
+- **Autenticazione utente** 🔐: Gli utenti possono registrarsi e accedere tramite un sistema sicuro di autenticazione basato su Firebase.
+- **Definizione delle abitudini** 📋: Gli utenti possono creare nuove abitudini, specificando il nome, la descrizione e la frequenza (giornaliera, settimanale, mensile).
+- **Tracciamento delle abitudini** ✅: Gli utenti possono marcare come completata un'attività legata a un'abitudine.
+- **Notifiche** 🔔: Notifiche periodiche per ricordare agli utenti di completare le loro abitudini.
+- **Report e grafici** 📈: Visualizzazione di grafici che mostrano il progresso delle abitudini nel tempo.
+- **Condivisione delle abitudini** 🫶: Possibilità di coinvolgere altri utenti nel tracciamento di un'abitudine comune e inviare loro notifiche via email.
 
-Terminata la prima fase, i team inizieranno a lavorare in modo indipendente, comunicando attraverso i gruppi Telegram che sono stati creati nei giorni precedenti. 
+## Tecnologie Utilizzate
 
-#### Fase 2: analisi e architettura
-Durante questa fase i team analizzeranno i requisiti, ed inizieranno a ragionare su un'architettura da dare al progetto, scegliendo anche quelle che sarà lo stack tecnologico, sulla base della loro stessa analisi.
-Quest'attività è volutamente lasciata in capo ai team, che saranno comunque seguiti, poichè è parte integrante delle dinamiche lavorative quando ci si approccia a nuovi progetti.
+- **Frontend**:
+  - [React](https://react.dev/) ⚛️
+  - [Material UI](https://mui.com/material-ui/) 🎨
+  - 
+- **Backend, Autenticazione, Databse & Hosting**:
+  - [Firebase](https://firebase.google.com/) 💻🔥
 
-#### Fase 3: Sviluppo
-I team svilupperanno la loro soluzione, concentrandosi sulle funzionalità principali, definite e prioritizzate in fase di analisi.
+- **Grafici**:
+  - [Chart.js](https://www.chartjs.org/) 📈 📉
 
-### Dal 13 al 19 Settembre
-I team continueranno a lavorare in modo indipendente sui loro progetti, cercando di implementare più funzionalità possibili.
+## Funzionalità Principali
 
-### Daily Review
+- **Autenticazione utente** 🔐: Gli utenti possono registrarsi e accedere tramite un sistema sicuro di autenticazione basato su Firebase.
+- **Definizione delle abitudini** 📋: Gli utenti possono creare nuove abitudini, specificando il nome, la descrizione e la frequenza (giornaliera, settimanale, mensile).
+- **Tracciamento delle abitudini** ✅: Gli utenti possono marcare come completata un'attività legata a un'abitudine.
+- **Notifiche** 🔔: Notifiche periodiche per ricordare agli utenti di completare le loro abitudini.
+- **Report e grafici** 📈: Visualizzazione di grafici che mostrano il progresso delle abitudini nel tempo.
+- **Condivisione delle abitudini** 🫶: Possibilità di coinvolgere altri utenti nel tracciamento di un'abitudine comune e inviare loro notifiche via email.
 
-Ogni giorno, a partire dal 14 Settembre, ci sarà un'attività di review con ogni singolo team
+## Requisiti
 
-### Giovedi 19 Settembre, ore 17: Meeting finale su [link zoom] e saluti
+- Node.js >= 20.17
+- Firebase Account
+- Git
 
-### Venerdi 20 Settembre: TECH JOBS FAIR!
-Ogni team presenterà il proprio progetto fisicamente alla Tech Jobs Fair di Roma!
+## Get Started
 
-# Requisito tecnico
+Installare Node.js
+https://nodejs.org/en
 
-## HABIT TRACKER
+Installare git
+https://git-scm.com/downloads
 
-### Scopo del Progetto:
-Realizzare un'applicazione che permetta di tracciare le abitudini di una persona
+Clonare il progetto con il comando nella bash o nel vostro terminale
+```sh
+git clone git@github.com:tomorrowdevs-projects/tech-jobs-fair-roma-2024-team4.git
+```
 
-L'applicazione dovrà permettere di:
-- far accedere l'utente ad un'area protetta tramite autenticazione
-- definire le proprie abitudini (es bere 10 bicchieri d'acqua al giorno) e la frequenza
-- inviare notifiche periodiche in base alle abitudini definite
-- tracciare il completamento di una singola attività legata all'abitudine
-- visualizzare grafici sull'andamento delle abitudini
+Spostarsi nella cartella habit tracker
+```sh
+cd habit_tracker
+```
 
-### Milestones
+Aggiungere un file .env con i parametri [firebase](https://firebase.google.com/_d/signin?continue=https%3A%2F%2Ffirebase.google.com%2F&prompt=select_account)
+```
+VITE_FIREBASE_API_KEY=<YOUR API KEY>
+VITE_FIREBASE_AUTH_DOMAIN=<YOUR VALUE>
+VITE_FIREBASE_PROJECT_ID=<YOUR VALUE>
+VITE_FIREBASE_STORAGE_BUCKET=<YOUR VALUE>
+VITE_FIREBASE_MESSAGING_SENDER_ID=<YOUR VALUE>
+VITE_FIREBASE_APP_ID=<YOUR VALUE>
+```
+![firebase parameter](/documentation/image/firebase-parameter.png  "firebase parameter")
 
-- [ ] Analizzare il progetto: Documentare attraverso un'analisi i requisiti del progetto e le varie parti di cui è composto, definire un'architettura di base del progetto (tecnologie / linguaggi)
-- [ ] Prototipare l'applicazione attraverso tool come Figma o Adobe XD
-- [ ] Garantire l'accesso autenticato, inserire un'abitudine, permettere all'utente di flaggarla come completata
-- [ ] Inserimento anche di abitudini ricorrenti (frequenza variabile, giornaliera, settimanale, o specifici giorni della settimana o del mese)
-- [ ] Notifiche del browser che avvisano la ricorrenza
-- [ ] Report sull'andamento, possibilità di coinvolgere altri utenti nelle abitudini, inviando loro notifiche via mail
+Installare le dipendenze
+```sh
+npm i
+```
 
+Lanciare la web app con il comando
+Installare le dipendenze
+```sh
+npm run dev
+```
 
-### Alcuni consigli utili
-
-- conoscetevi nel team, come persone, esperienze e skil
-- studiate il progetto
-- fate un piano: del progetto in generale, tenete in considerazione adeguatamente le priorità indicate nel progetto stesso (quel che sta nella milestone finale è meno prioritario di quel che sta nella milestone iniziale, avere tutto completo tranne la milestone iniziale non è un buon risultato)
-- suddividete i compiti nel team, in base a competenze e disponibilità
-- fatevi un calendario, sia per le disponibilità delle persone sia sugli obiettivi
-- fatevi un'idea di dove e come le persone presenti al fair potranno vedere il vostro lavoro (consiglio: decidete il prima possibile dove e come deployare il progetto, inizialmente anche solo con un hello world! in modo da avere un ambiente pronto e sempre aggiornato dove voi, i vostri compagni di squadra e i mentor, possano vedere l'as-is)
-
+[Go to Top](#top)
