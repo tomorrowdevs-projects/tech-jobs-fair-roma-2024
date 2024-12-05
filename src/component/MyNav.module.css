@@ -1,0 +1,92 @@
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.appName {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fffdfd;
+}
+
+
+@media (max-width: 768px) { 
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .appName {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) { 
+  .logo {
+    height: 25px;
+    width: 25px;
+  }
+
+  .appName {
+    font-size: 1rem;
+  }
+}
+
+.imgProfile {
+  height: 70px;
+  width: 70px;
+}
+
+.noCaret::after {
+  display: none !important;
+}
+
+.navBar {
+  background-color: #5251b5 !important;
+}
+
+.navText {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -3%;
+  color: #fffdfd;
+  text-align: center;
+}
+
+.narrowDropdown {
+  min-width: 120px !important;
+  width: auto !important;
+}
+
+.userToggle {
+  padding: 0.5rem !important;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .narrowDropdown {
+    min-width: 100px !important;
+  }
+
+  .imgProfile {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navText {
+    font-size: 0.8rem;
+  }
+}
