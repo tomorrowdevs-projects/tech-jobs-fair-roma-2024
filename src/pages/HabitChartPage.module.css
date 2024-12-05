@@ -1,0 +1,201 @@
+.habitChartPage {
+  background-color: #5251B5;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+.goBackButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.goBackButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pageTitle {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sectionTitle {
+  margin-block: 1.2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.habitList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.habitItem {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habitName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.habitFrequency {
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.periodButton {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.periodButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.chartPlaceholder {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.noData {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 13rem auto;
+  border-radius: 50%;
+  background-color: #8E97FD;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.chartContainer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.periodButton.activePeriod {
+  background-color: rgba(126, 126, 204, 0.3);
+  border: 1px solid #8686CB;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .habitName {
+    font-size: 1rem;
+  }
+
+  .habitFrequency {
+    font-size: 0.8rem;
+  }
+
+  .periodButton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin: 8px;
+  }
+
+  .chartContainer {
+    padding: 10px;
+  }
+
+  .noData {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+
+  .date {
+    font-size: 0.9rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+
+  .habitName {
+    font-size: 0.9rem;
+  }
+
+  .habitFrequency {
+    font-size: 0.7rem;
+  }
+
+  .periodButton {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    margin: 6px;
+  }
+
+  .chartContainer {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .noData {
+    font-size: 1rem;
+  }
+}
